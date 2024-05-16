@@ -1,16 +1,22 @@
-body {
-	margin:0;
+html{
+	scroll-behavior: smooth
 }
-#navbar{
-	z-index: 3;
+body {
+	background-color: #ebf3f5;
+	margin: 0px;
+}
+nav{
+	position: sticky;
+	top: 0;
 }
 .navul{
 	list-style-type: none;
 	overflow: hidden;
-	background-color: gray;
-	height: 120px;
+	background-color: #0a72a6;
+	height: 95px;
 	padding: 5px;
 	margin-top: 0px;
+	mix-blend-mode: multiply;
 }
 .nava{
 	text-decoration: none;
@@ -19,61 +25,130 @@ body {
 	text-align: center;
 	color: white;
 	border-radius: 10px;
-	margin-top: 30px;
+	margin-top: 20px;
 	font-size: 20px;
 }
 .navbar a:hover{
-	background-color: blue;
+	background-color: #6697ff;
 }
 .navbar li{
 	float: left;
 }
+#m{
+	margin-left: 500px;
+}
 #logo{
-	height: 90px;
+	height: 85px;
 	margin-left: 10px;
 	text-decoration: none;
 	padding: 15px;
 	display: block;
+	margin-top: -7px;
 }
 
-#background{
-	margin-top: -20px;
-   background-image: url("https://i.imgur.com/NFhbVHs.jpeg");
-   height:830px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   filter: blur(4px) brightness(30%);
-  -webkit-filter: blur(4px) brightness(30%);
+
+#headerlogo{
+	height: 115px;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+	mix-blend-mode: multiply;
 }
-#headerh1{
-  color: white;
+#headerscroll {
+  text-align: center;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply;
+}
+#headerscroll a:hover{
+	background-color: blue;
+	padding: 15px;
+	border-radius: 10px;
+}
+#headera{
+	color: black;
   font-weight: bold;	
-  font-size: 46px;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
+  font-size: 30px;
+  scroll-behavior: smooth;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
 }
 
-#headerscroll{
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  text-shadow: red 2px 0 5px;
+
+#infouch{
+	text-align: center;
+	padding: 100px;
 }
-#headera{
-	color: white;
-    font-weight: bold;	
-    font-size: 30px;
+#mainimg{
+	height: 550px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 50px;
+	left: 50%;
+	border-radius: 5px;
+}	
+#textmain{
+	width: 56%;
+	font-size: 23px;
+	margin-left: auto;
+    margin-right: auto;
+	line-height: 1.2;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
+footer{
+	background-color: #0a72a6;
+	height: 350px;
 }
-#headera{
-	scroll-behavior: smooth;
+#leftside{
+	padding: 15px;
+	margin-left: 10%;
+	font-size: 25px;
 }
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
+  }
+  

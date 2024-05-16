@@ -5,10 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>30 СУ "Братя Миладинови"</title>
 	<link rel="stylesheet" href="styles/style.css">
+	<script src="main.js"></script>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
+
 <nav class="navbar">
 	<ul class="navul">
+		<li id="m"></li>
 		<li><a href="main.html"><img src="images/logouch2-removebg.png" id="logo"></a></li>
 		<li><a href="main.html" class="nava">Начало</a></li>
 		<li><a href="students.html" class="nava">Прием</a></li>
@@ -19,19 +22,53 @@
 	
 </nav>
     <header>
-    	<div id="background"></div>
-    		<div id ="text">
-    	<h1 id="headerh1">30 СУ "Братя Миладинови"</h1>
+    	<img src="images/CNrnihi7WY8d.png" id="headerlogo">
             <p id="headerscroll"><a href="#infouch" id="headera">Научете повече</a></p>
-        </div>
 	</header>
 	<div class="main">
+		<img src="images/fon.jpg" id="mainimg">
 		<div id="infouch">
-			<p style="font-size: 30px; margin-left: 40px;">test</p>
-			<img src="images/logouch2-removebg.png">
+			<p id="textmain">30. СУ „Братя Миладинови” е първото училище с разширено изучаване на немски и испански език – традиция, която преминава през годините до днес и му придава облик на училище с утвърден чуждоезиков профил.</p>
+			<p id="textmain">То е базово учебно заведение на СУ „Св. Кл. Охридски”. Разполага с 25 класни стаи, кабинети по биология, химия, физика, география, история, музика, три кабинета по информационни технологии и два по труд и техника, актова зала, оборудвана видеозала, библиотека с над 13 000 тома, физкултурен салон и открити спортни площадки.
+				В него се обучават над 800 ученици, а за овладяването на знанията се грижи педагогически екип от висококвалифицирани базови учители, автори на учебници и учебни помагала, носители на награди и отличия.
+				 Обучението по немски и испански език, за което училището е профилирано, е по най-съвременни учебни програми,а много от завършилите се реализираткато студенти в чужбина.
+				  Учениците имат възможност да проявяват творчество и инициативност.</p>
 		</div>
 	</div>
 	<footer>
+		<div id="leftside">
+			<h4>СОЦИАЛНА МЕДИЯ</h4>
+		</div>
 	</footer>
+	
+	<script>
+		var myVar;
+		
+		function myFunction() {
+		  myVar = setTimeout(showPage, 3000);
+		}
+		
+		function showPage() {
+		  document.getElementById("loader").style.display = "none";
+		  document.getElementById("myDiv").style.display = "block";
+		}
+		</script>
+			<div id="loader"></div>
+
+			<div style="display:none;" id="myDiv" class="animate-bottom">
+
+			</div>
+			
+			<script>
+			var myVar;
+			
+			function myFunction() {
+			  myVar = setTimeout(showPage, 3000);
+			}
+			
+			function showPage() {
+			  document.getElementById("loader").style.display = "none";
+			  document.getElementById("myDiv").style.display = "block";
+			}
 </body>
 </html>

@@ -4,6 +4,7 @@ html{
 body {
 	background-color: #ebf3f5;
 	margin: 0;
+
 }
 nav{
 	position: sticky;
@@ -53,11 +54,12 @@ header{
 }
 #headerlogo{
 	height: 125px;
-	width: 650px;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
     display: block;
 	mix-blend-mode: multiply;
+	overflow: hidden;
 }
 #headerscroll {
   text-align: center;
@@ -77,6 +79,7 @@ header{
   scroll-behavior: smooth;
   margin-left: auto;
   margin-right: auto;
+  padding: 15px;
   text-decoration: ; /* trq se preceni dali she e s liniq ili bez*/
   
 }
@@ -133,6 +136,23 @@ header{
 	position: relative;
 	z-index: 4;
 }
+#scrolltotop{
+	width: 50px;
+	float: right;
+	bottom:25px;
+	right: 25px;
+	z-index: 99;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	border-radius: 2px;
+	background-color: #010166;
+	position: fixed;	
+
+	color:white;
+	display: block;
+    text-decoration: none;
+	font-size: 17px;
+}
 
 
 #galeriq{
@@ -175,7 +195,6 @@ header{
 	padding: 5px;
 	border-radius: 20px;
 }
-
 
 footer{
 	background-color: #0a72a6;
@@ -281,4 +300,45 @@ footer{
 }
 #specialnosti a{
 	color: #010166;
+}
+
+#priem{
+	font-size: 37px;
+	margin-top: 40px;
+	margin-bottom: 32px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-align: center;
+}
+.flexcontainter{
+	display: block;
+	background-color: #1a4b75;
+	padding: 100px;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 300px;
+	text-align: center;
+	border-radius: 20px;
+}
+.flexcontainter div{
+	text-align: center;
+	background-color: #0a72a6;
+	width: 300px;
+}
+#klas1{
+  border-style: solid;
+
+}
+#klas5{
+	border-style: solid;
+
+}
+#klas8{
+	border-style: solid;
+}
+#info {
+	font-size: 20px;
+	margin-left: auto;
+	border-style: solid;
+	padding: 10px;
 }

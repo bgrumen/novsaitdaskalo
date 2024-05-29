@@ -309,25 +309,33 @@ footer{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
 }
-.flexcontainter{
-	display: block;
-	background-color: #1a4b75;
-	padding: 100px;
-	width: 1000px;
+
+#infocon{
+	border-style: solid;
+	font-size: 17px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 300px;
+	border-style: solid;
+	padding: 15px;
+	width: 430px;
 	text-align: center;
-	border-radius: 20px;
+	border-radius: 5px;
+	margin-top: 40px;
 }
-.flexcontainter div{
+#infocon ol{
+	padding: 0;
+}
+.infoklasove{
 	text-align: center;
-	background-color: #0a72a6;
+	background-color: ; /* da se izmisli cvqt */
 	width: 300px;
+	border-radius: 10px;
+	display:inline-block;
+	margin-bottom: 35px;
+	margin: 5px;
 }
 #klas1{
   border-style: solid;
-
 }
 #klas5{
 	border-style: solid;
@@ -339,6 +347,13 @@ footer{
 #info {
 	font-size: 20px;
 	margin-left: auto;
-	border-style: solid;
-	padding: 10px;
+	margin-right: auto;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#klasovecontainer{
+	margin: 50px;
+	padding: 15px;
+	text-align: center;
 }
